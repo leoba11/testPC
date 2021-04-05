@@ -5,7 +5,7 @@ import logging from "./config/logging";
 import config from "./config/config";
 import mongoose from "mongoose";
 import userRoutes from "./routes/user";
-import reporttUsersRoutes from './routes/reportUser';
+import reportUsersRoutes from './routes/reportUser';
 
 const NAMESPACE = "Server";
 const router = express();
@@ -61,7 +61,7 @@ router.use((req, res, next) => {
 /** Routes go here */
 router.use("/users", userRoutes);
 
-router.use("/api", reporttUsersRoutes);
+router.use("/api", reportUsersRoutes);
 
 /** Error handling */
 router.use((req, res, next) => {

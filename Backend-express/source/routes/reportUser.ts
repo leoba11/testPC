@@ -1,5 +1,7 @@
 import express from 'express';
 import controller from '../controllers/reportUser';
+import verifyAdmin from "../middleware/verifyAdmin";
+
 
 const router = express.Router();
 

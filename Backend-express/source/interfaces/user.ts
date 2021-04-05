@@ -6,4 +6,5 @@ export default interface IUser extends Document {
   lastName: string;
   email: string;
   password: string;
+  admin: boolean;
 }
