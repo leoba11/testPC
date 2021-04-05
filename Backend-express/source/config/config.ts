@@ -12,14 +12,14 @@ const MONGO_OPTIONS = {
     retryWrites: false
 }
 
-const MONGO_USERNAME = process.env.MONGO_USERNAME || 'leoba11';
-const MONGO_PASSWORD = process.env.MONGO_USERNAME || 'Leonardobar11.';
+const MONGO_USERNAME = process.env.MONGO_USERNAME || '<USUARIO>';
+const MONGO_PASSWORD = process.env.MONGO_USERNAME || '<CONTRASENA>';
 
 const MONGO = {
     password: MONGO_PASSWORD,
     username: MONGO_USERNAME,
     options: MONGO_OPTIONS,
-    url: `mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@sandbox.ljgdy.mongodb.net/testDB?retryWrites=true&w=majority`
+    url: `<URL>`
 };
 
 const SERVER_HOSTNAME = process.env.SERVER_HOSTNAME || 'localhost';
